@@ -38,10 +38,10 @@ if (isset($_POST["submit"])) {
         <div id="nav-head" class="header-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-3  col-sm-12" style="color:#000;font-weight:bold; font-size:42px; margin-top: 1% !important;">CHS
-                       <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                    <div class="col-lg-2 col-md-3 col-sm-12 logo-text">CHS
+                       <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block small-menu fa-bars"></i></a>
                     </div>
-                    <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
+                    <div id="menu" class="col-lg-8 col-md-9 collapse nav-item">
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#services">Services</a></li>
@@ -50,9 +50,6 @@ if (isset($_POST["submit"])) {
                             <li><a href="#contact_us">Contact Us</a></li>
                             <li><a href="#logins">Logins</a></li>
                         </ul>
-                    </div>
-                    <div class="col-sm-2 d-none d-lg-block appoint">
-                        <a class="btn btn-info" href="hms/user-login.php">Book an Appointment</a>
                     </div>
                 </div>
 
@@ -123,57 +120,12 @@ if (isset($_POST["submit"])) {
                 <p>Take a look at some of our key features</p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-key">
-                        <i class="fas fa-heartbeat"></i>
-                        <h5>Cardiology</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-key">
-                        <i class="fas fa-ribbon"></i>
-                        <h5>Orthopaedic</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-key">
-                       <i class="fab fa-monero"></i>
-                        <h5>Neurologist</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-key">
-                        <i class="fas fa-capsules"></i>
-                        <h5>Pharma Pipeline</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-key">
-                        <i class="fas fa-prescription-bottle-alt"></i>
-                        <h5>Pharma Team</h5>
-                    </div>
-                </div>
-
-
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-key">
-                        <i class="far fa-thumbs-up"></i>
-                        <h5>High Quality treatments</h5>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
+            <div class="feature-item"><i class="fas fa-heartbeat"></i><h5>Cardiology</h5></div>
+            <div class="feature-item"><i class="fas fa-ribbon"></i><h5>Orthopaedic</h5></div>
+            <div class="feature-item"><i class="fab fa-monero"></i><h5>Neurologist</h5></div>
+            <div class="feature-item"><i class="fas fa-capsules"></i><h5>Pharma Pipeline</h5></div>
+            <div class="feature-item"><i class="fas fa-prescription-bottle-alt"></i><h5>Pharma Team</h5></div>
+            <div class="feature-item"><i class="far fa-thumbs-up"></i><h5>High Quality treatments</h5></div>
 
         </div>
 
@@ -194,58 +146,9 @@ if (isset($_POST["submit"])) {
 
                 <h2>Logins</h2>
             </div>
-            <div class="col-sm-12 blog-cont">
-                <div class="row no-margin">
-                    <div class="col-sm-4 blog-smk">
-                        <div class="blog-single">
-
-                                <img src="assets/images/patient.jpg" alt="">
-
-                            <div class="blog-single-det">
-                                <h6>Patient Login</h6>
-                                <a href="hms/user-login.php" target="_blank">
-                                    <button class="btn btn-success btn-sm">Click Here</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 blog-smk">
-                        <div class="blog-single">
-
-                                <img src="assets/images/doctor.jpg" alt="">
-
-                            <div class="blog-single-det">
-                                <h6>Doctors login</h6>
-                                <a href="hms/doctor" target="_blank">
-                                    <button class="btn btn-success btn-sm">Click Here</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 blog-smk">
-                        <div class="blog-single">
-
-                                <img src="assets/images/admin.jpg" alt="">
-
-                            <div class="blog-single-det">
-                                <h6>Admin Login</h6>
-
-                                <a href="hms/admin" target="_blank">
-                                    <button class="btn btn-success btn-sm">Click Here</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-                </div>
-            </div>
-
+            <div class="login-item"><h6>Patient Login</h6><a href="hms/user-login.php" target="_blank" class="btn btn-outline-accent">Access Patient Portal</a></div>
+            <div class="login-item"><h6>Doctors login</h6><a href="hms/doctor" target="_blank" class="btn btn-outline-accent">Doctor Login</a></div>
+            <div class="login-item"><h6>Admin Login</h6><a href="hms/admin" target="_blank" class="btn btn-outline-accent">Admin Panel</a></div>
         </div>
     </section>
 

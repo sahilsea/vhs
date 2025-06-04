@@ -1,10 +1,10 @@
 /* =======================================================================
-Template Name: Dil Hospital
-Author:  SmartEye Adminpanel
+Template Name: Dil Hospital (Dark Theme Redesign)
+Author:  SmartEye Adminpanel / Redesigned by AI
 Author URI: www.smarteyeapps.com
 Version: 1.0
-coder name:Prabin Raja
-Description: This Template is created for web template
+coder name:Prabin Raja / AI
+Description: This Template is created for web template, modified for a dark theme.
 ======================================================================= */
 /* ===================================== Import Less ================================== */
 @font-face {
@@ -25,10 +25,10 @@ img {
 a {
   text-decoration: none;
   outline: none;
-  color: #34495e; }
+  color: #00CFE8; } /* Accent for links */
 
 a:hover {
-  color: #34495e; }
+  color: #00a9c0; } /* Darker accent on hover */
 
 ul {
   margin-bottom: 0;
@@ -76,38 +76,49 @@ p {
   height: 100%; }
 
 ::placeholder {
-  color: #747f8a !important;
+  color: #A0A0A0 !important; /* Subtle text for placeholder */
   font-size: 13px;
-  opacity: .5 !important; }
+  opacity: .7 !important; }
 
 .container-fluid {
   padding: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato-Bold", Arial, Helvetica, sans-serif; }
+  font-family: "Lato-Bold", Arial, Helvetica, sans-serif;
+  color: #E0E0E0; /* Primary text color for headings */
+}
 
 strong {
-  font-family: "Lato-Bold", Arial, Helvetica, sans-serif; }
+  font-family: "Lato-Bold", Arial, Helvetica, sans-serif;
+  color: #E0E0E0; /* Primary text color */
+}
 
 body {
-  background-color: #ecf0f1 !important;
+  background-color: #121212 !important; /* Primary dark background */
   font-family: "Lato-Regular", Arial, Helvetica, sans-serif;
-  color: #34495e; }
+  color: #E0E0E0; /* Primary text color */
+}
 
 .session-title {
   padding: 30px;
   margin: 0px; }
   .session-title h2 {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    color: #E0E0E0;
+  }
   .session-title p {
     max-width: 850px;
     text-align: center;
     float: none;
-    margin: auto; }
+    margin: auto;
+    color: #A0A0A0; /* Secondary text */
+  }
   .session-title span {
     float: right;
-    font-style: italic; }
+    font-style: italic;
+    color: #A0A0A0;
+  }
 
 .inner-title {
   padding: 20px;
@@ -117,10 +128,14 @@ body {
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    font-family: "slab", Arial, Helvetica, sans-serif; } /* Retain "slab" as it's different */
+    font-family: "slab", Arial, Helvetica, sans-serif; /* Retain "slab" */
+    color: #E0E0E0;
+  }
   .inner-title p {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    color: #A0A0A0;
+  }
 
 .page-nav {
   padding: 40px;
@@ -132,7 +147,7 @@ body {
   .page-nav h2 {
     font-size: 36px;
     width: 100%;
-    color: #34495e; } /* Corrected */
+    color: #E0E0E0; }
     @media screen and (max-width: 600px) {
       .page-nav h2 {
         font-size: 26px; } }
@@ -144,49 +159,61 @@ body {
     .page-nav ul li i {
       width: 30px;
       text-align: center;
-      color: #34495e; } /* Corrected */
+      color: #00CFE8; } /* Accent */
     .page-nav ul li a {
-      color: #34495e; } /* Corrected */
+      color: #00CFE8; } /* Accent */
 
-.btn-success {
-  background-color: #27ae60;
-  border-color: #27ae60; }
-  .btn-success:hover {
-    background-color: #27ae60 !important;
-    border-color: #27ae60 !important; }
-  .btn-success:active {
-    background-color: #27ae60 !important;
-    border-color: #27ae60 !important; }
-  .btn-success:focus {
-    background-color: #27ae60 !important;
-    border-color: #27ae60 !important;
-    box-shadow: none !important; }
+.btn { /* General button reset for dark theme */
+  box-shadow: none;
+  border-radius: 2px;
+  padding: 10px 20px; /* Default padding */
+}
 
-.btn-info {
-  background-color: #3498db;
-  border-color: #3498db; }
-  .btn-info:hover {
-    background-color: #3498db !important;
-    border-color: #3498db !important; }
-  .btn-info:active {
-    background-color: #3498db !important;
-    border-color: #3498db !important; }
-  .btn-info:focus {
-    background-color: #3498db !important;
-    border-color: #3498db !important;
-    box-shadow: none !important; }
-
-.btn {
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 2px; }
-
-.form-control:focus {
-  box-shadow: none !important;
-  border: 2px solid  #3498db; }
+.btn-success, .btn-info { /* Main action buttons */
+  background-color: #00CFE8;
+  border-color: #00CFE8;
+  color: #121212; /* Dark text on light accent button */
+}
+  .btn-success:hover, .btn-info:hover {
+    background-color: #00a9c0 !important;
+    border-color: #00a9c0 !important;
+    color: #121212 !important;
+  }
+  .btn-success:active, .btn-info:active {
+    background-color: #008C9E !important; /* Even darker for active */
+    border-color: #008C9E !important;
+    color: #121212 !important;
+  }
+  .btn-success:focus, .btn-info:focus {
+    background-color: #00a9c0 !important;
+    border-color: #00a9c0 !important;
+    color: #121212 !important;
+    box-shadow: 0 0 0 .2rem rgba(0,207,232,.25) !important; /* Accent focus glow */
+  }
 
 .btn-light {
-  background-color: #FFF;
-  color: #3F3F3F; }
+  background-color: #2E2E2E; /* Dark gray background */
+  color: #E0E0E0; /* Light text */
+  border: 1px solid #A0A0A0; /* Subtle border */
+}
+  .btn-light:hover {
+    background-color: #3E3E3E !important;
+    color: #FFFFFF !important;
+    border-color: #B0B0B0 !important;
+  }
+
+
+.form-control {
+  background-color: #1E1E1E; /* Secondary dark background */
+  color: #E0E0E0; /* Light text for input */
+  border: 1px solid #2E2E2E; /* Subtle border */
+  margin-bottom: 20px; }
+  .form-control:focus {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border-color: #00CFE8; /* Accent border on focus */
+    box-shadow: 0 0 0 .2rem rgba(0,207,232,.25); /* Accent focus glow */
+  }
 
 @media screen and (max-width: 1199px) {
   .container {
@@ -194,29 +221,27 @@ body {
 .collapse.show {
   display: block !important; }
 
-/* Ensure this specific .form-control:focus rule for #3498db takes precedence */
-.form-control {
-  background-color: #F8F8F8;
-  margin-bottom: 20px; }
-  .form-control:focus {
-    /* This rule for general focus is fine, but the one above with #3498db is more specific */
-    background-color: #FFF;
-    border-color: #CCC; }
 
 /* ===================================== Header CSS ================================== */
 header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Dark theme shadow */
   position: relative;
   width: 100%;
   z-index: 999; }
   header .header-nav {
-    background-color: #FFF;
+    background-color: #1E1E1E; /* Secondary dark background for header */
     width: 100%; }
     header .header-nav .nav-item ul li {
       float: left;
       font-family: "Lato-Bold", Arial, Helvetica, sans-serif;
       font-size: 16px;
       padding: 28px; }
+      header .header-nav .nav-item ul li a { /* Ensure nav links use accent */
+        color: #00CFE8;
+      }
+      header .header-nav .nav-item ul li a:hover {
+        color: #00a9c0;
+      }
       @media screen and (max-width: 998px) {
         header .header-nav .nav-item ul li {
           padding: 30px 18px; } }
@@ -224,8 +249,9 @@ header {
         header .header-nav .nav-item ul li {
           float: none;
           padding: 14px;
-          border-top: 1px solid #CCC; } }
-    header .header-nav .nav-img img {
+          border-top: 1px solid #2E2E2E; /* Dark border */
+        } }
+    header .header-nav .nav-img img { /* Assuming logo image might be light text on transparent BG */
       width: 200px;
       padding: 0px;
       margin-top: 21px; }
@@ -239,17 +265,17 @@ header {
     header .header-nav .appoint {
       padding-top: 21px; }
   header .scroll-to-fixed-fixed {
-    background-color: #FFF;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    background-color: #1E1E1E;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); }
 
-header .header-nav .appoint .btn-info {
-  padding: 10px 20px; /* Adjust padding as needed */
-  font-size: 1em; /* Adjust font size as needed */
+header .header-nav .appoint .btn-info { /* Already covered by .btn-info, but keeps specificity */
+  padding: 10px 20px;
+  font-size: 1em;
 }
 
-.small-menu {
+.small-menu { /* Hamburger icon */
   float: right;
-  color: #2c3e50;
+  color: #00CFE8; /* Accent color */
   font-size: 32px;
   margin-top: 17px;
   margin-right: 12px; }
@@ -259,9 +285,11 @@ header .header-nav .appoint .btn-info {
 
 /* ===================================== Slide Style CSS ================================== */
 .slider-detail {
-  padding-top: 0px; }
+  padding-top: 0px;
+  background-color: #121212; /* Ensure slider area bg is dark */
+}
   .slider-detail .carousel-cover {
-    background-color: rgba(44, 62, 80, 0.7);
+    background-color: rgba(0, 207, 232, 0.2); /* Accent with low opacity for a subtle effect */
     position: absolute;
     left: -30%;
     width: 80%;
@@ -286,11 +314,15 @@ header .header-nav .appoint .btn-info {
     left: 10%;
     max-width: 40%; }
     .slider-detail .carousel-caption h5 {
-      font-size: 40px; }
+      font-size: 40px;
+      color: #FFFFFF; /* Stark white for slider title */
+    }
     .slider-detail .carousel-caption p {
       font-size: 18px;
       margin-top: 40px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      color: #E0E0E0; /* Primary light text */
+    }
     .slider-detail .carousel-caption .vbh {
       margin: 0px; }
     @media screen and (max-width: 1090px) {
@@ -304,11 +336,20 @@ header .header-nav .appoint .btn-info {
       .slider-detail .carousel-caption p {
         margin-bottom: 10px; } }
   .slider-detail .carousel-indicators {
-    left: -70%; }
-  .slider-detail .btn-default {
-    background-color: #FFF;
-    color: #34495e; /* Corrected */
-    font-weight: 600; }
+    left: -70%; } /* This might need adjustment if indicators are used */
+    .slider-detail .carousel-indicators li {
+      background-color: #00CFE8; /* Accent for indicators */
+    }
+  .slider-detail .btn-default { /* Slider call to action button */
+    background-color: #00CFE8;
+    color: #121212;
+    font-weight: 600;
+    border: none;
+  }
+    .slider-detail .btn-default:hover{
+      background-color: #00a9c0;
+      color: #121212;
+    }
     @media screen and (max-width: 792px) {
       .slider-detail .btn-default {
         padding: 5px;
@@ -318,40 +359,46 @@ header .header-nav .appoint .btn-info {
 .key-features .kvxol {
   padding: 0px; }
 .key-features .single-key {
-  background-color: #FFF;
+  background-color: #1E1E1E; /* Secondary dark bg for cards */
   margin-bottom: 30px;
   text-align: center;
-  padding: 30px; }
+  padding: 30px;
+  border: 1px solid #2E2E2E; /* Subtle border */
+}
   .key-features .single-key i {
-    background-color: #FFF;
+    background-color: transparent; /* Icons shouldn't have own bg */
     padding: 20px;
     font-size: 42px;
-    color: #2c3e50;
+    color: #00CFE8; /* Accent color for icons */
     margin-bottom: 30px;
     border-radius: 50px; }
   .key-features .single-key p {
     font-family: "Lato-Regular", Arial, Helvetica, sans-serif;
-    font-size: 15px; }
-.key-features .ky-1 {
-  background-color: #03509e;
-  color: #FFF;
-  margin-bottom: 0px; }
-.key-features .ky-2 {
-  background-color: #0085bc;
-  color: #FFF;
-  margin-bottom: 0px; }
+    font-size: 15px;
+    color: #A0A0A0; /* Secondary text */
+  }
+  .key-features .single-key h5{
+     color: #E0E0E0; /* Primary text for title */
+  }
+.key-features .ky-1, .key-features .ky-2 { /* Old colored blocks */
+  background-color: #1E1E1E; /* Standardize to panel bg */
+  color: #E0E0E0;
+  margin-bottom: 0px;
+  border: 1px solid #2E2E2E;
+}
 
-.department {
+.department { /* This section holds Key Features */
   padding: 80px 50px;
-  background-color: #FFF; }
+  background-color: #121212; /* Main dark background */
+}
   @media screen and (max-width: 940px) {
     .department {
       padding: 50px 10px; } }
 
-/* ===================================== Our Blog CSS ================================== */
-.our-blog {
+/* ===================================== Our Blog CSS (Logins Section) ================================== */
+.our-blog { /* This class is used for the Logins section */
   padding: 80px 50px;
-  background-color: #e0e6e8; /* Corrected */
+  background-color: #121212; /* Main dark background */
   padding-bottom: 100px; }
   @media screen and (max-width: 940px) {
     .our-blog {
@@ -366,77 +413,128 @@ header .header-nav .appoint .btn-info {
   .our-blog .blog-cont {
     float: none;
     margin: auto; }
-  .our-blog .blog-single {
+  .our-blog .blog-single { /* Individual login card container */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px; }
-    .our-blog .blog-single .figure {
-      margin-bottom: 0px; }
-  .our-blog .blog-single-det {
+    .our-blog .blog-single .figure { /* Image container */
+      margin-bottom: 0px;
+      background-color: #2E2E2E; /* Placeholder for image if any */
+      padding: 10px;
+    }
+    .our-blog .blog-single .figure img{
+      border: 1px solid #2E2E2E;
+    }
+  .our-blog .blog-single-det { /* Login card content area */
     margin: auto;
     padding: 20px;
     z-index: 99;
-    box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4); /* Dark theme shadow */
     width: 90%;
     position: relative;
-    margin-top: -80px;
-    background-color: #FFF; }
-    .our-blog .blog-single-det .btn {
+    margin-top: -80px; /* This might need adjustment if images are different */
+    background-color: #1E1E1E; /* Panel background */
+    border: 1px solid #2E2E2E;
+  }
+    .our-blog .blog-single-det .btn { /* "Click here" button */
       margin-top: 10px;
-      margin-bottom: 10px; }
-    .our-blog .blog-single-det span {
+      margin-bottom: 10px;
+      /* Styling inherited from .btn-success/.btn-info */
+    }
+    .our-blog .blog-single-det span { /* Old pink text */
       font-size: 13px;
-      color: #b5316a; }
-    .our-blog .blog-single-det h6 {
-      font-size: 1.3rem; }
+      color: #A0A0A0; /* Subtle text */
+    }
+    .our-blog .blog-single-det h6 { /* Patient/Doctor/Admin Login title */
+      font-size: 1.3rem;
+      color: #E0E0E0; /* Primary text */
+    }
     .our-blog .blog-single-det p {
       margin-top: 15px;
       margin-bottom: 15px;
-      font-size: 1rem; }
+      font-size: 1rem;
+      color: #A0A0A0; /* Secondary text */
+    }
 
 /* ===================================== Contact US CSS ================================== */
-.contact-rooo {
+.contact-rooo { /* Wraps contact form and map if any */
   padding: 80px 50px;
-  background-color: #FFF; }
+  background-color: #121212; }
   @media screen and (max-width: 940px) {
     .contact-rooo {
       padding: 50px 10px; } }
 
 .contact-us-single {
-  background-color: #FFF; }
-  .contact-us-single .cop-ck {
-    padding: 10px 30px; }
-    .contact-us-single .cop-ck h2 {
-      font-size: 22px;
-      margin-bottom: 20px; }
+  background-color: #1E1E1E; /* Panel background for contact form area */
+  padding: 30px;
+  border: 1px solid #2E2E2E;
+}
+  .contact-us-single .cop-ck h2 { /* "Contact Form" title */
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #E0E0E0;
+  }
+  .contact-us-single .cop-ck label {
+    color: #A0A0A0; /* Secondary text for labels */
+  }
   .contact-us-single .cf-ro {
     margin-top: 10px; }
 
 /*====================================== About Us Style ====================================*/
-.about-us .image-bg {
-  background-image: url(../images/why.jpg);
-  background-size: contain; }
-.about-us .abut-yoiu {
+.about-us {
+  background-color: #121212; /* Main dark background */
+}
+.about-us .image-bg { /* Assuming this had a light bg image */
+  /* background-image: url(../images/why.jpg); Re-evaluate if image is suitable for dark theme */
+  background-color: #1E1E1E; /* Placeholder bg */
+  background-size: contain;
+  min-height: 300px; /* Ensure visibility if image is removed */
+}
+.about-us .abut-yoiu { /* Text content area for About Us */
   padding: 50px;
-  background-color: #FFF; }
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border-left: 1px solid #2E2E2E; /* If side-by-side with image */
+}
+  .about-us .abut-yoiu h3 {
+    color: #00CFE8; /* Accent for this title */
+  }
+  .about-us .abut-yoiu p {
+    color: #A0A0A0;
+  }
+
 
 /* ===================================== Gallery Style  ================================== */
 .gallery-filter {
   width: 100%;
   text-align: center; }
-  .gallery-filter .btn {
-    background-color: #FFF; }
+  .gallery-filter .btn { /* Filter buttons e.g. All, Dental etc */
+    background-color: #1E1E1E;
+    color: #00CFE8;
+    border: 1px solid #00CFE8;
+    margin: 5px;
+  }
+  .gallery-filter .btn:hover {
+    background-color: #00CFE8;
+    color: #121212;
+  }
+  .gallery-filter .btn.active { /* Assuming a class for active filter */
+    background-color: #00CFE8;
+    color: #121212;
+  }
+
 
 .gallery {
   padding: 80px 50px;
-  background-color: #e0e6e8; /* Corrected */ }
+  background-color: #121212; /* Main dark background */
+}
   @media screen and (max-width: 940px) {
     .gallery {
       padding: 50px 10px; } }
 
 .gallery-title {
   font-size: 36px;
-  color: #2c3e50;
+  color: #00CFE8; /* Accent color */
   text-align: center;
   font-weight: 500;
   margin-bottom: 70px; }
@@ -447,82 +545,385 @@ header .header-nav .appoint .btn-info {
   width: 7.5%;
   left: 46.5%;
   height: 45px;
-  border-bottom: 1px solid #2c3e50; }
+  border-bottom: 1px solid #00CFE8; } /* Accent color */
 
-.filter-button {
+.filter-button { /* These are the gallery filter buttons */
   font-size: 18px;
-  border: 1px solid #2c3e50;
+  border: 1px solid #00CFE8;
   border-radius: 5px;
   text-align: center;
-  color: #2c3e50;
-  margin-bottom: 30px; }
+  color: #00CFE8;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
 
 .filter-button:hover {
-  font-size: 18px;
-  border: 1px solid #2c3e50;
-  border-radius: 5px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #2c3e50; }
+  color: #121212; /* Dark text on hover */
+  background-color: #00CFE8; /* Accent bg on hover */
+}
 
-.btn-default:active .filter-button:active {
-  background-color: #2c3e50;
-  color: white; }
+/* Ensure .btn-default:active .filter-button:active is covered or updated if this specific combination is used */
+.btn-default:active .filter-button:active { /* If a .btn-default wraps a .filter-button */
+  background-color: #00a9c0;
+  color: #121212; }
 
 .port-image {
   width: 100%; }
 
-.gallery_product {
-  margin-bottom: 30px; }
+.gallery_product { /* Individual gallery item */
+  margin-bottom: 30px;
+  background-color: #1E1E1E; /* Panel bg for image frame */
+  padding: 10px;
+  border: 1px solid #2E2E2E;
+}
+  .gallery_product img {
+    display: block; /* Ensure img is block to prevent extra space */
+  }
 
 /* ===================================== Fooer CSS ================================== */
 .footer {
   padding: 30px;
   padding-bottom: 0px;
-  background-color: #1a252f;
-  color: #ecf0f1; }
+  background-color: #000000; /* Pure black footer */
+  color: #A0A0A0; /* Secondary text */
+  border-top: 1px solid #2E2E2E;
+}
   @media screen and (max-width: 940px) {
     .footer {
       padding: 50px 10px;
       padding-bottom: 0px; } }
-  .footer h2 {
-    font-size: 26px;
-    margin-top: 10px; }
+  .footer h2 { /* "Useful Links", "Contact Us" */
+    font-size: 20px; /* Slightly smaller */
+    margin-top: 10px;
+    color: #E0E0E0; /* Primary light text */
+  }
   .footer p {
     text-align: justify;
-    text-indent: 20px; }
+    text-indent: 20px;
+    color: #A0A0A0;
+  }
   .footer .link-list li {
-    padding: 10px;
-    border-bottom: 1px solid #4b5a68; }
+    padding: 8px 0; /* Adjusted padding */
+    border-bottom: 1px solid #2E2E2E; /* Dark border */
+  }
     .footer .link-list li a {
-      color: #ecf0f1; }
+      color: #00CFE8; /* Accent for links */
+    }
+    .footer .link-list li a:hover {
+      color: #00a9c0;
+    }
     .footer .link-list li i {
-      float: right; }
-  .footer .map-img {
-    font-weight: 600;
-    font-size: 17px;
-    padding-left: 20px; }
-  .footer address a {
-    color: #ecf0f1; }
+      float: right;
+      color: #00CFE8; /* Accent for icons */
+    }
+  .footer .map-img { /* Contact details in footer */
+    font-weight: normal; /* Standard weight */
+    font-size: 15px; /* Standard size */
+    padding-left: 0; /* Removed padding if not needed */
+    color: #A0A0A0;
+  }
+  .footer address a { /* Email link in address */
+    color: #00CFE8; /* Accent */
+  }
+   .footer address {
+     font-style: normal;
+   }
 
-.copy {
+.copy { /* Bottom copyright bar */
   padding: 20px;
-  background-color: #10181f;
-  color: #ecf0f1; }
+  background-color: #0D0D0D; /* Very dark, slightly off black */
+  color: #A0A0A0; /* Secondary text */
+  text-align: center; /* Center copyright text */
+  border-top: 1px solid #2E2E2E;
+}
   .copy a {
-    color: #ecf0f1; }
-  .copy span {
-    float: right; }
+    color: #00CFE8; /* Accent for any links in copyright */
+  }
+  .copy span { /* Social icons if any */
+    float: none; /* Let them be inline or manage differently */
+    margin-left: 10px;
+  }
     .copy span i {
-      margin-right: 20px; }
+      margin-right: 10px; /* Spacing for icons */
+      color: #00CFE8;
+    }
 
-.kf-2 {
-  background-color: #FCFCFC;
+.kf-2 { /* Another section, make it dark */
+  background-color: #121212;
   padding: 80px 50px; }
   @media screen and (max-width: 940px) {
     .kf-2 {
       padding: 50px 10px; } }
-  .kf-2 .single-key {
-    box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35); }
+  .kf-2 .single-key { /* Assuming this is similar to other .single-key */
+    background-color: #1E1E1E;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Darker shadow */
+    border: 1px solid #2E2E2E;
+  }
+    .kf-2 .single-key h5 {
+      color: #E0E0E0;
+    }
+    .kf-2 .single-key i {
+      color: #00CFE8;
+    }
+    .kf-2 .single-key p {
+      color: #A0A0A0;
+    }
+
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Added for Drastic Layout Restructuring */
+
+/* Header Logo Text */
+.logo-text {
+  color: #E0E0E0; /* Light text for dark theme */
+  font-weight:bold;
+  font-size:42px;
+  margin-top: 1% !important;
+}
+
+/* Collapsible Menu Styles */
+header .header-nav .nav-item#menu {
+  width: 100%;
+  background-color: #1E1E1E; /* Panel Background */
+  position: absolute;
+  top: 100%; /* Position below header */
+  left: 0;
+  z-index: 1000;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header .header-nav .nav-item#menu.show { /* Bootstrap's class for shown collapsed element */
+  display: block !important;
+}
+
+header .header-nav .nav-item#menu ul {
+  width:100%;
+}
+
+header .header-nav .nav-item#menu ul li {
+  float: none;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #2E2E2E; /* Dark border */
+}
+header .header-nav .nav-item#menu ul li:last-child {
+  border-bottom: none;
+}
+header .header-nav .nav-item#menu ul li a {
+  display: block; /* Make link take full width of li for better clickability */
+  padding: 15px;
+}
+/* End of Collapsible Menu Styles */
+
+
+/* Key Features - New Structure */
+.feature-item {
+  background-color: #1E1E1E; /* Panel background */
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #2E2E2E; /* Dark Border */
+  border-radius: 4px;
+}
+.feature-item i {
+  color: #00CFE8; /* Accent */
+  font-size: 2em;
+  margin-right: 20px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+.feature-item h5 {
+  color: #E0E0E0; /* Primary Text */
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+/* End of Key Features Styles */
+
+
+/* Logins Section - New Structure */
+.login-item {
+  background-color: #1E1E1E; /* Panel Background */
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2E2E2E; /* Dark Border */
+  border-radius: 4px;
+}
+.login-item h6 {
+  color: #E0E0E0; /* Primary Text */
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+
+.btn-outline-accent {
+  background-color: transparent;
+  color: #00CFE8; /* Accent */
+  border: 1px solid #00CFE8; /* Accent */
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  border-radius: 2px; /* Match general .btn style */
+}
+.btn-outline-accent:hover {
+  background-color: #00CFE8; /* Accent */
+  color: #121212; /* Dark text for contrast */
+}
+/* End of Logins Section Styles */
+
+/* Component Styling Overhaul */
+
+/* 1. General Button Refinements */
+.btn {
+  border-radius: 0; /* Square buttons */
+  letter-spacing: 0.5px; /* Slightly more spacing */
+  text-transform: uppercase; /* Uppercase button text */
+  padding: 12px 25px; /* Adjust padding for new look */
+  /* box-shadow: none; was applied in dark theme base */
+}
+
+/* Styling for .btn-default, often used for less prominent buttons */
+.btn-default {
+  background-color: #2E2E2E;
+  color: #E0E0E0;
+  border: 1px solid #A0A0A0;
+}
+.btn-default:hover {
+  background-color: #3E3E3E;
+  color: #FFFFFF;
+  border-color: #B0B0B0;
+}
+
+/* Update gallery filter buttons specifically.
+   The .filter-button class might have old theme colors.
+   We want them to look like .btn-default but with an accent for active. */
+.gallery-filter .filter-button { /* Overriding previous .filter-button styles */
+  background-color: #2E2E2E;
+  color: #E0E0E0;
+  border: 1px solid #A0A0A0;
+  /* Inherits .btn square shape, uppercase, etc. */
+}
+.gallery-filter .filter-button:hover {
+  background-color: #3E3E3E;
+  color: #FFFFFF;
+  border-color: #B0B0B0;
+}
+.gallery-filter .filter-button.active { /* Assuming 'active' class is added by JS */
+  background-color: #00CFE8; /* Accent for active filter */
+  color: #121212; /* Dark text on accent */
+  border-color: #00CFE8; /* Accent border */
+}
+
+
+/* 2. Gallery Item Styling */
+.gallery_product {
+  background-color: transparent; /* Remove panel background */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove border */
+  position: relative; /* For potential overlay/caption */
+  overflow: hidden; /* Ensure overlay fits */
+  margin-bottom: 20px; /* Keep some margin */
+}
+.gallery_product img.img-responsive { /* Target the image specifically */
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* For hover effect */
+}
+.gallery_product:hover img.img-responsive {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+.gallery_product .gallery-caption { /* Optional: caption on hover */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery_product:hover .gallery-caption {
+  opacity: 1;
+}
+
+/* 3. Contact Form Input Refinements */
+/* Targeting .form-control within .contact-us-single for specificity */
+.contact-us-single .form-control {
+  background-color: transparent; /* Transparent background */
+  color: #E0E0E0; /* Light text */
+  border: none; /* No side/top borders */
+  border-bottom: 1px solid #2E2E2E; /* Only bottom border, dark gray */
+  border-radius: 0; /* Square inputs, matching .btn */
+  padding-left: 0; /* Align text to the left if no side borders */
+  margin-bottom: 25px; /* Increase spacing */
+  box-shadow: none; /* Remove any default browser shadow on input */
+}
+.contact-us-single .form-control:focus {
+  background-color: transparent; /* Keep transparent on focus */
+  color: #E0E0E0; /* Keep text color */
+  border-bottom-color: #00CFE8; /* Accent color for bottom border on focus */
+  box-shadow: none; /* Remove default focus glow */
+}
+.contact-us-single textarea.form-control { /* Specific for textarea if needed */
+  min-height: 100px; /* Adjust height */
+}
+
+/* End of Component Styling Overhaul */
+
+/* Font Styling Adjustments for Dark Theme */
+
+body {
+  font-weight: 400; /* Explicitly set for Lato-Regular */
+  letter-spacing: 0.2px; /* Slightly increase for readability on dark */
+  line-height: 1.7; /* Improve line spacing for body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Explicitly set for Lato-Bold */
+  letter-spacing: 0.3px; /* Slightly more spacing for headings */
+}
+
+/* Inner titles (section titles) - unifying to Lato-Bold */
+.inner-title h2 {
+  font-family: "Lato-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2.2rem; /* Slightly larger */
+  letter-spacing: 0.5px;
+}
+.inner-title p {
+    letter-spacing: 0.3px;
+}
+
+/* Header navigation links */
+header .header-nav .nav-item#menu ul li a {
+  font-weight: 400; /* Regular weight for nav links */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+/* Feature item titles */
+.feature-item h5 {
+  font-weight: 600; /* Slightly less than main headings */
+  letter-spacing: 0.3px;
+}
+
+/* Login item titles */
+.login-item h6 {
+  font-weight: 600; /* Slightly less than main headings */
+  letter-spacing: 0.3px;
+}
+
+/* Placeholder text */
+::placeholder {
+  letter-spacing: 0.2px; /* Match body letter spacing */
+}
+
+/* End of Font Styling Adjustments */
