@@ -8,11 +8,11 @@ Description: This Template is created for web template
 ======================================================================= */
 /* ===================================== Import Less ================================== */
 @font-face {
-  font-family: 'mouse-300';
-  src: url("../fonts/PT_Sans-Web-Regular.ttf") format("truetype"); }
+  font-family: 'Lato-Regular';
+  src: url("../fonts/Lato-Regular.ttf") format("truetype"); }
 @font-face {
-  font-family: 'mouse-500';
-  src: url("../fonts/PT_Sans-Web-Bold.ttf") format("truetype"); }
+  font-family: 'Lato-Bold';
+  src: url("../fonts/Lato-Bold.ttf") format("truetype"); }
 /* ===================================== Basic CSS ================================== */
 * {
   margin: 0px;
@@ -25,10 +25,10 @@ img {
 a {
   text-decoration: none;
   outline: none;
-  color: #444; }
+  color: #34495e; }
 
 a:hover {
-  color: #444; }
+  color: #34495e; }
 
 ul {
   margin-bottom: 0;
@@ -84,15 +84,15 @@ p {
   padding: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+  font-family: "Lato-Bold", Arial, Helvetica, sans-serif; }
 
 strong {
-  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+  font-family: "Lato-Bold", Arial, Helvetica, sans-serif; }
 
 body {
-  background-color: #f7f7ff !important;
-  font-family: "mouse-300", Arial, Helvetica, sans-serif;
-  color: #6A6A6A; }
+  background-color: #ecf0f1 !important;
+  font-family: "Lato-Regular", Arial, Helvetica, sans-serif;
+  color: #34495e; }
 
 .session-title {
   padding: 30px;
@@ -117,7 +117,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    font-family: "slab", Arial, Helvetica, sans-serif; }
+    font-family: "slab", Arial, Helvetica, sans-serif; } /* Retain "slab" as it's different */
   .inner-title p {
     width: 100%;
     text-align: center; }
@@ -132,7 +132,7 @@ body {
   .page-nav h2 {
     font-size: 36px;
     width: 100%;
-    color: #444; }
+    color: #34495e; } /* Corrected */
     @media screen and (max-width: 600px) {
       .page-nav h2 {
         font-size: 26px; } }
@@ -144,36 +144,36 @@ body {
     .page-nav ul li i {
       width: 30px;
       text-align: center;
-      color: #444; }
+      color: #34495e; } /* Corrected */
     .page-nav ul li a {
-      color: #444; }
+      color: #34495e; } /* Corrected */
 
 .btn-success {
-  background-color: #00ab9f;
-  border-color: #00ab9f; }
+  background-color: #27ae60;
+  border-color: #27ae60; }
   .btn-success:hover {
-    background-color: #00ab9f !important;
-    border-color: #00ab9f !important; }
+    background-color: #27ae60 !important;
+    border-color: #27ae60 !important; }
   .btn-success:active {
-    background-color: #00ab9f !important;
-    border-color: #00ab9f !important; }
+    background-color: #27ae60 !important;
+    border-color: #27ae60 !important; }
   .btn-success:focus {
-    background-color: #00ab9f !important;
-    border-color: #00ab9f !important;
+    background-color: #27ae60 !important;
+    border-color: #27ae60 !important;
     box-shadow: none !important; }
 
 .btn-info {
-  background-color: #00a8df;
-  border-color: #00a8df; }
+  background-color: #3498db;
+  border-color: #3498db; }
   .btn-info:hover {
-    background-color: #00a8df !important;
-    border-color: #00a8df !important; }
+    background-color: #3498db !important;
+    border-color: #3498db !important; }
   .btn-info:active {
-    background-color: #00a8df !important;
-    border-color: #00a8df !important; }
+    background-color: #3498db !important;
+    border-color: #3498db !important; }
   .btn-info:focus {
-    background-color: #00a8df !important;
-    border-color: #00a8df !important;
+    background-color: #3498db !important;
+    border-color: #3498db !important;
     box-shadow: none !important; }
 
 .btn {
@@ -182,7 +182,7 @@ body {
 
 .form-control:focus {
   box-shadow: none !important;
-  border: 2px solid  #00a8df; }
+  border: 2px solid  #3498db; }
 
 .btn-light {
   background-color: #FFF;
@@ -194,14 +194,12 @@ body {
 .collapse.show {
   display: block !important; }
 
-.form-control:focus {
-  box-shadow: none;
-  border: 2px solid #0d7a40 !important; }
-
+/* Ensure this specific .form-control:focus rule for #3498db takes precedence */
 .form-control {
   background-color: #F8F8F8;
   margin-bottom: 20px; }
   .form-control:focus {
+    /* This rule for general focus is fine, but the one above with #3498db is more specific */
     background-color: #FFF;
     border-color: #CCC; }
 
@@ -216,7 +214,7 @@ header {
     width: 100%; }
     header .header-nav .nav-item ul li {
       float: left;
-      font-family: "mouse-500", Arial, Helvetica, sans-serif;
+      font-family: "Lato-Bold", Arial, Helvetica, sans-serif;
       font-size: 16px;
       padding: 28px; }
       @media screen and (max-width: 998px) {
@@ -244,9 +242,14 @@ header {
     background-color: #FFF;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
+header .header-nav .appoint .btn-info {
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 1em; /* Adjust font size as needed */
+}
+
 .small-menu {
   float: right;
-  color: #00ab9f;
+  color: #2c3e50;
   font-size: 32px;
   margin-top: 17px;
   margin-right: 12px; }
@@ -258,13 +261,7 @@ header {
 .slider-detail {
   padding-top: 0px; }
   .slider-detail .carousel-cover {
-    background-color: rgba(0, 173, 162, 0.53);
-    position: absolute;
-    left: 0px;
-    width: 40%;
-    top: 50px;
-    height: 100%;
-    background-color: rgba(0, 173, 162, 0.53);
+    background-color: rgba(44, 62, 80, 0.7);
     position: absolute;
     left: -30%;
     width: 80%;
@@ -310,7 +307,7 @@ header {
     left: -70%; }
   .slider-detail .btn-default {
     background-color: #FFF;
-    color: #444;
+    color: #34495e; /* Corrected */
     font-weight: 600; }
     @media screen and (max-width: 792px) {
       .slider-detail .btn-default {
@@ -329,11 +326,11 @@ header {
     background-color: #FFF;
     padding: 20px;
     font-size: 42px;
-    color: #00ab9f;
+    color: #2c3e50;
     margin-bottom: 30px;
     border-radius: 50px; }
   .key-features .single-key p {
-    font-family: "mouse-300", Arial, Helvetica, sans-serif;
+    font-family: "Lato-Regular", Arial, Helvetica, sans-serif;
     font-size: 15px; }
 .key-features .ky-1 {
   background-color: #03509e;
@@ -354,7 +351,7 @@ header {
 /* ===================================== Our Blog CSS ================================== */
 .our-blog {
   padding: 80px 50px;
-  background-color: #FAFAFA;
+  background-color: #e0e6e8; /* Corrected */
   padding-bottom: 100px; }
   @media screen and (max-width: 940px) {
     .our-blog {
@@ -432,14 +429,14 @@ header {
 
 .gallery {
   padding: 80px 50px;
-  background-color: #FAFAFA; }
+  background-color: #e0e6e8; /* Corrected */ }
   @media screen and (max-width: 940px) {
     .gallery {
       padding: 50px 10px; } }
 
 .gallery-title {
   font-size: 36px;
-  color: #00ab9f;
+  color: #2c3e50;
   text-align: center;
   font-weight: 500;
   margin-bottom: 70px; }
@@ -450,26 +447,26 @@ header {
   width: 7.5%;
   left: 46.5%;
   height: 45px;
-  border-bottom: 1px solid #00ab9f; }
+  border-bottom: 1px solid #2c3e50; }
 
 .filter-button {
   font-size: 18px;
-  border: 1px solid #00ab9f;
+  border: 1px solid #2c3e50;
   border-radius: 5px;
   text-align: center;
-  color: #00ab9f;
+  color: #2c3e50;
   margin-bottom: 30px; }
 
 .filter-button:hover {
   font-size: 18px;
-  border: 1px solid #00ab9f;
+  border: 1px solid #2c3e50;
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-  background-color: #00ab9f; }
+  background-color: #2c3e50; }
 
 .btn-default:active .filter-button:active {
-  background-color: #00ab9f;
+  background-color: #2c3e50;
   color: white; }
 
 .port-image {
@@ -480,14 +477,14 @@ header {
 
 /* ===================================== Fooer CSS ================================== */
 .footer {
-  padding: 80px 50px;
   padding: 30px;
   padding-bottom: 0px;
-  background-color: #444;
-  color: #FFF; }
+  background-color: #1a252f;
+  color: #ecf0f1; }
   @media screen and (max-width: 940px) {
     .footer {
-      padding: 50px 10px; } }
+      padding: 50px 10px;
+      padding-bottom: 0px; } }
   .footer h2 {
     font-size: 26px;
     margin-top: 10px; }
@@ -496,9 +493,9 @@ header {
     text-indent: 20px; }
   .footer .link-list li {
     padding: 10px;
-    border-bottom: 1px solid #6C6C6C; }
+    border-bottom: 1px solid #4b5a68; }
     .footer .link-list li a {
-      color: #FFF; }
+      color: #ecf0f1; }
     .footer .link-list li i {
       float: right; }
   .footer .map-img {
@@ -506,14 +503,14 @@ header {
     font-size: 17px;
     padding-left: 20px; }
   .footer address a {
-    color: #FFF; }
+    color: #ecf0f1; }
 
 .copy {
   padding: 20px;
-  background-color: #2E2E2E;
-  color: #FFF; }
+  background-color: #10181f;
+  color: #ecf0f1; }
   .copy a {
-    color: #FFF; }
+    color: #ecf0f1; }
   .copy span {
     float: right; }
     .copy span i {

@@ -20,7 +20,7 @@ if (isset($_POST["submit"])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> VitalCare Hospital management System </title>
+    <title>Community Health Services</title>
 
     <link rel="shortcut icon" href="assets/images/fav.jpg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -38,7 +38,7 @@ if (isset($_POST["submit"])) {
         <div id="nav-head" class="header-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-3  col-sm-12" style="color:#000;font-weight:bold; font-size:42px; margin-top: 1% !important;">VC-HMS
+                    <div class="col-lg-2 col-md-3  col-sm-12" style="color:#000;font-weight:bold; font-size:42px; margin-top: 1% !important;">CHS
                        <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
                     </div>
                     <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
@@ -52,7 +52,7 @@ if (isset($_POST["submit"])) {
                         </ul>
                     </div>
                     <div class="col-sm-2 d-none d-lg-block appoint">
-                        <a class="btn btn-success" href="hms/user-login.php">Book an Appointment</a>
+                        <a class="btn btn-info" href="hms/user-login.php">Book an Appointment</a>
                     </div>
                 </div>
 
@@ -79,7 +79,7 @@ if (isset($_POST["submit"])) {
                     <img class="d-block w-100" src="assets/images/slider/slider_2.jpg" alt="Second slide">
                     <div class="carousel-cover"></div>
                     <div class="carousel-caption vdg-cur d-none d-md-block">
-                        <h5 class="animated bounceInDown">VitalCare Hospital Management System</h5>
+                        <h5 class="animated bounceInDown">Community Health Services</h5>
 
 
 
@@ -90,7 +90,7 @@ if (isset($_POST["submit"])) {
                     <img class="d-block w-100" src="assets/images/slider/slider_3.jpg" alt="Third slide">
                       <div class="carousel-cover"></div>
                     <div class="carousel-caption vdg-cur d-none d-md-block">
-                        <h5 class="animated bounceInDown"> VitalCare Hospital Management System</h5>
+                        <h5 class="animated bounceInDown"> Community Health Services</h5>
 
 
 
@@ -111,76 +111,6 @@ if (isset($_POST["submit"])) {
 
 
     </div>
-
-  <!--  ************************* Logins ************************** -->
-
-
-     <section id="logins" class="our-blog container-fluid">
-        <div class="container">
-        <div class="inner-title">
-
-                <h2>Logins</h2>
-            </div>
-            <div class="col-sm-12 blog-cont">
-                <div class="row no-margin">
-                    <div class="col-sm-4 blog-smk">
-                        <div class="blog-single">
-
-                                <img src="assets/images/patient.jpg" alt="">
-
-                            <div class="blog-single-det">
-                                <h6>Patient Login</h6>
-                                <a href="hms/user-login.php" target="_blank">
-                                    <button class="btn btn-success btn-sm">Click Here</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 blog-smk">
-                        <div class="blog-single">
-
-                                <img src="assets/images/doctor.jpg" alt="">
-
-                            <div class="blog-single-det">
-                                <h6>Doctors login</h6>
-                                <a href="hms/doctor" target="_blank">
-                                    <button class="btn btn-success btn-sm">Click Here</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 blog-smk">
-                        <div class="blog-single">
-
-                                <img src="assets/images/admin.jpg" alt="">
-
-                            <div class="blog-single-det">
-                                <h6>Admin Login</h6>
-
-                                <a href="hms/admin" target="_blank">
-                                    <button class="btn btn-success btn-sm">Click Here</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-
-
 
     <!-- ################# Our Departments Starts Here#######################--->
 
@@ -247,6 +177,76 @@ if (isset($_POST["submit"])) {
 
         </div>
 
+    </section>
+
+
+
+
+
+
+
+  <!--  ************************* Logins ************************** -->
+
+
+     <section id="logins" class="our-blog container-fluid">
+        <div class="container">
+        <div class="inner-title">
+
+                <h2>Logins</h2>
+            </div>
+            <div class="col-sm-12 blog-cont">
+                <div class="row no-margin">
+                    <div class="col-sm-4 blog-smk">
+                        <div class="blog-single">
+
+                                <img src="assets/images/patient.jpg" alt="">
+
+                            <div class="blog-single-det">
+                                <h6>Patient Login</h6>
+                                <a href="hms/user-login.php" target="_blank">
+                                    <button class="btn btn-success btn-sm">Click Here</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 blog-smk">
+                        <div class="blog-single">
+
+                                <img src="assets/images/doctor.jpg" alt="">
+
+                            <div class="blog-single-det">
+                                <h6>Doctors login</h6>
+                                <a href="hms/doctor" target="_blank">
+                                    <button class="btn btn-success btn-sm">Click Here</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 blog-smk">
+                        <div class="blog-single">
+
+                                <img src="assets/images/admin.jpg" alt="">
+
+                            <div class="blog-single-det">
+                                <h6>Admin Login</h6>
+
+                                <a href="hms/admin" target="_blank">
+                                    <button class="btn btn-success btn-sm">Click Here</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
@@ -419,7 +419,7 @@ while ($row = mysqli_fetch_array($ret)) { ?>
     </footer>
     <div class="copy">
             <div class="container">
-         Hospital Management System
+         Community Health Services
 
 
             </div>
